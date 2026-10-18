@@ -1,16 +1,17 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#fff8f1">
+<meta name="theme-color" content="#F0E8E8">
 <meta name="description" content="Discover handmade crochet flowers, cuddly friends, bags and thoughtful gifts at Crochet Queen. Every stitch is made with love.">
 <title>Crochet Queen — Little Things, Made with Love</title>
+  <link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--cream:#fff8f1;--paper:#fffdf9;--ink:#453b3b;--muted:#887d79;--pink:#f4cbd5;--rose:#e8a7b9;--sage:#dce9d8;--lavender:#e7e0f6;--butter:#f8e9b7;--clay-shadow:8px 8px 18px #e8dcd2,-8px -8px 18px #ffffff;--soft-shadow:5px 5px 12px #eaded5,-5px -5px 12px #ffffff;--radius:28px;--max:1160px}
+:root{--cream:#F0E8E8;--paper:#FFFCFF;--ink:#39334B;--muted:#726B7C;--pink:#E87088;--rose:#D95F7A;--sage:#E4D5F5;--lavender:#7878B8;--butter:#F0C870;--clay-shadow:8px 8px 18px #D6CACA,-8px -8px 18px #FFFFFF;--soft-shadow:5px 5px 12px #DCD0D0,-5px -5px 12px #FFFFFF;--radius:28px;--max:1160px}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:100px}
 body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.65;overflow-x:hidden}
@@ -20,15 +21,15 @@ button,a{-webkit-tap-highlight-color:transparent}
 button{color:inherit}
 img{display:block;width:100%;object-fit:cover}
 .container{width:min(var(--max),calc(100% - 40px));margin:auto}
-.announcement{text-align:center;background:#e9dff5;padding:8px 12px;font-size:12px;font-weight:700;letter-spacing:.08em}
-header{position:sticky;top:0;z-index:20;background:#fff8f1eF;backdrop-filter:blur(18px);border-bottom:1px solid #e8dcd2}
+.announcement{text-align:center;background:#D9C5F0;padding:8px 12px;font-size:12px;font-weight:700;letter-spacing:.08em}
+header{position:sticky;top:0;z-index:20;background:#F0E8E8eF;backdrop-filter:blur(18px);border-bottom:1px solid #D6CACA}
 .nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}
 .brand{display:flex;align-items:center;gap:10px;font-family:"Playfair Display",serif;font-size:25px;font-weight:700;letter-spacing:-.8px;white-space:nowrap}
-.brand-mark{display:grid;place-items:center;width:42px;height:42px;background:var(--pink);border-radius:15px;box-shadow:var(--soft-shadow);font-size:23px;transform:rotate(-7deg)}
+.brand-mark{display:block;width:72px;height:54px;object-fit:contain;flex:0 0 auto;background:#FFFCFF;border-radius:14px;padding:3px;box-sizing:border-box;box-shadow:var(--soft-shadow);transform:none}
 .nav-links{display:flex;align-items:center;gap:28px;font-size:13px;font-weight:600;color:#736663}
 .nav-links a:hover{color:#bd7089}
-.nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 20px;border:0;border-radius:17px;background:var(--pink);box-shadow:5px 5px 10px #e5c8c7,-4px -4px 10px #fff;cursor:pointer;font-weight:700;font-size:13px;transition:transform .25s,box-shadow .25s}
-.nav-cta:hover,.button:hover{transform:translateY(-3px);box-shadow:7px 9px 15px #e5c8c7,-4px -4px 10px #fff}
+.nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 20px;border:0;border-radius:17px;background:var(--pink);box-shadow:5px 5px 10px #D95F7A,-4px -4px 10px #fff;cursor:pointer;font-weight:700;font-size:13px;transition:transform .25s,box-shadow .25s}
+.nav-cta:hover,.button:hover{transform:translateY(-3px);box-shadow:7px 9px 15px #D95F7A,-4px -4px 10px #fff}
 .menu-toggle{display:none;border:0;background:var(--paper);box-shadow:var(--soft-shadow);border-radius:14px;width:44px;height:44px;font-size:21px}
 .hero{padding:64px 0 76px;position:relative}
 .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:50px;align-items:center}
@@ -37,12 +38,18 @@ header{position:sticky;top:0;z-index:20;background:#fff8f1eF;backdrop-filter:blu
 .hero h1 em{font-weight:500;color:#c47c91}
 .hero-copy{max-width:480px;color:var(--muted);font-size:16px;line-height:1.9}
 .hero-actions{display:flex;flex-wrap:wrap;gap:15px;margin-top:29px}
-.button.primary{background:#e9b8c7}
+.button.primary{background:#E87088}
 .button.secondary{background:var(--paper)}
 .trust{display:flex;gap:15px;align-items:center;margin-top:32px;color:var(--muted);font-size:12px}
 .avatars{display:flex;padding-left:5px}
 .avatars span{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--butter);border:2px solid var(--cream);margin-left:-5px;font-size:14px}
 .hero-art{position:relative;min-height:465px;display:grid;place-items:center}
+.hero{position:relative;isolation:isolate;overflow:hidden;background:#F0E8E8}
+.hero-background-video{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;object-position:center;pointer-events:none}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(255,250,250,.91) 0%,rgba(255,250,250,.78) 48%,rgba(240,232,232,.48) 100%);pointer-events:none}
+.hero-grid{position:relative;z-index:1}
+@media(max-width:650px){.hero-background-video{object-position:center}.hero::before{background:linear-gradient(180deg,rgba(255,250,250,.88),rgba(255,250,250,.72))}}
+@media(prefers-reduced-motion:reduce){.hero-background-video{display:none}}
 .art-halo{position:absolute;width:88%;height:88%;border-radius:48% 52% 45% 55%;background:var(--sage);transform:rotate(-8deg);box-shadow:inset 10px 10px 25px #cad9c5,inset -10px -10px 25px #f5fff0}
 .hero-photo{position:relative;width:75%;height:385px;border:10px solid #fffaf4;border-radius:48% 48% 28px 28px;overflow:hidden;box-shadow:12px 15px 25px #b9c8b2;transform:rotate(3deg);animation:float 6s ease-in-out infinite}
 .hero-photo img{height:100%;object-position:center}
@@ -53,7 +60,7 @@ header{position:sticky;top:0;z-index:20;background:#fff8f1eF;backdrop-filter:blu
 .sparkle.s1{top:8%;right:8%}.sparkle.s2{bottom:7%;left:8%;animation-delay:-1.5s}
 @keyframes float{0%,100%{transform:translateY(0) rotate(2deg)}50%{transform:translateY(-12px) rotate(-1deg)}}
 @keyframes twinkle{0%,100%{opacity:.45;transform:scale(.85)}50%{opacity:1;transform:scale(1.15)}}
-.marquee{overflow:hidden;background:#f3e4dc;padding:15px 0}
+.marquee{overflow:hidden;background:#F0C870;padding:15px 0}
 .marquee-track{display:flex;width:max-content;animation:marquee 32s linear infinite}
 .marquee-track span{padding:0 24px;font-size:12px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#826c67}
 @keyframes marquee{to{transform:translateX(-50%)}}
@@ -98,14 +105,14 @@ h2{font-family:"Playfair Display",serif;font-size:clamp(34px,4vw,48px);font-weig
 .mini-button:hover{transform:translateY(-2px)}
 .empty-state{grid-column:1/-1;padding:45px;text-align:center;color:var(--muted);background:var(--paper);border-radius:20px}
 .note{margin-top:22px;font-size:11px;color:var(--muted)}
-.story{background:#f0e7f7;border-radius:38px;padding:55px;display:grid;grid-template-columns:.85fr 1.15fr;gap:45px;align-items:center;box-shadow:inset 7px 7px 16px #e0d5e9,inset -7px -7px 16px #fff8ff}
+.story{background:#E4D5F5;border-radius:38px;padding:55px;display:grid;grid-template-columns:.85fr 1.15fr;gap:45px;align-items:center;box-shadow:inset 7px 7px 16px #e0d5e9,inset -7px -7px 16px #fff8ff}
 .story-art{position:relative;min-height:310px;display:grid;place-items:center}
 .story-art img{height:310px;max-width:330px;border-radius:48% 48% 25px 25px;box-shadow:var(--clay-shadow)}
 .story-sticker{position:absolute;bottom:4px;right:0;padding:14px 18px;background:var(--butter);border-radius:18px;box-shadow:var(--soft-shadow);font-size:12px;font-weight:700;transform:rotate(5deg)}
 .story-copy p{color:#756a79;font-size:14px;line-height:1.95}
 .values{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
 .value-pill{padding:9px 13px;border-radius:99px;background:#fffaf5;box-shadow:var(--soft-shadow);font-size:11px;font-weight:700}
-.custom-banner{background:#e4eddc;border-radius:32px;padding:48px;display:flex;align-items:center;justify-content:space-between;gap:25px;box-shadow:inset 6px 6px 14px #d2dfcb,inset -6px -6px 14px #f5fff0}
+.custom-banner{background:#D9C5F0;border-radius:32px;padding:48px;display:flex;align-items:center;justify-content:space-between;gap:25px;box-shadow:inset 6px 6px 14px #d2dfcb,inset -6px -6px 14px #f5fff0}
 .custom-banner p{max-width:530px;color:#667461;font-size:14px}
 footer{padding:55px 0 25px}
 .footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:35px;border-bottom:1px solid #e6d9d0}
@@ -114,22 +121,42 @@ footer{padding:55px 0 25px}
 .footer-links{display:grid;gap:9px;font-size:12px;color:var(--muted)}
 .footer-links a:hover{color:#b7758a}
 .footer-bottom{display:flex;justify-content:space-between;gap:20px;padding-top:20px;font-size:11px;color:var(--muted)}
-.toast{position:fixed;left:50%;bottom:25px;transform:translate(-50%,20px);z-index:100;max-width:calc(100% - 30px);padding:14px 20px;background:#453b3b;color:white;border-radius:15px;font-size:13px;box-shadow:0 10px 30px #453b3b35;opacity:0;pointer-events:none;transition:.25s;text-align:center}
+.toast{position:fixed;left:50%;bottom:25px;transform:translate(-50%,20px);z-index:100;max-width:calc(100% - 30px);padding:14px 20px;background:#39334B;color:white;border-radius:15px;font-size:13px;box-shadow:0 10px 30px #39334B35;opacity:0;pointer-events:none;transition:.25s;text-align:center}
 .toast.show{opacity:1;transform:translate(-50%,0)}
 .reveal{opacity:0;transform:translateY(20px);transition:opacity .7s,transform .7s}
 .reveal.visible{opacity:1;transform:translateY(0)}
 @keyframes appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 :focus-visible{outline:3px solid #bd8194;outline-offset:4px}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+/* Crochet Queen cinematic handmade hero animation */
+.hero-photo{background:#b77b55;isolation:isolate}
+.hero-photo #crochet-animation{display:block;width:100%;height:100%;position:absolute;inset:0}
+.hero-photo .scene-glow{animation:sceneGlow 7s ease-in-out infinite alternate;transform-origin:center}
+.hero-photo .yarn-orbit{transform-box:fill-box;transform-origin:center;animation:yarnOrbit 8s ease-in-out infinite}
+.hero-photo .yarn-orbit.orbit-two{animation-delay:-3s;animation-duration:10s}
+.hero-photo .left-hand{transform-box:fill-box;transform-origin:78% 25%;animation:leftStitch 3.2s ease-in-out infinite}
+.hero-photo .right-hand{transform-box:fill-box;transform-origin:20% 25%;animation:rightStitch 3.2s ease-in-out infinite}
+.hero-photo .hook-motion{transform-box:fill-box;transform-origin:50% 50%;animation:hookStitch 3.2s ease-in-out infinite}
+.hero-photo .yarn-thread{stroke-dasharray:9 7;animation:threadFlow 2.4s linear infinite}
+.hero-photo .sparkle-dot{transform-box:fill-box;transform-origin:center;animation:heroSparkle 3s ease-in-out infinite}
+.hero-photo .sparkle-dot.delay{animation-delay:-1.5s}
+@keyframes sceneGlow{from{opacity:.55}to{opacity:1}}
+@keyframes yarnOrbit{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-7px) rotate(3deg)}}
+@keyframes leftStitch{0%,100%{transform:translate(0,0) rotate(0)}40%{transform:translate(4px,-5px) rotate(-2deg)}65%{transform:translate(-1px,2px) rotate(1deg)}}
+@keyframes rightStitch{0%,100%{transform:translate(0,0) rotate(0)}35%{transform:translate(-5px,-4px) rotate(2deg)}62%{transform:translate(2px,2px) rotate(-1deg)}}
+@keyframes hookStitch{0%,100%{transform:translate(0,0) rotate(-8deg)}35%{transform:translate(5px,-7px) rotate(2deg)}62%{transform:translate(-3px,3px) rotate(-15deg)}}
+@keyframes threadFlow{to{stroke-dashoffset:-32}}
+@keyframes heroSparkle{0%,100%{opacity:.25;transform:scale(.7)}50%{opacity:1;transform:scale(1.25)}}
+@media(prefers-reduced-motion:reduce){.hero-photo .scene-glow,.hero-photo .yarn-orbit,.hero-photo .left-hand,.hero-photo .right-hand,.hero-photo .hook-motion,.hero-photo .yarn-thread,.hero-photo .sparkle-dot{animation:none!important}}
 @media(max-width:900px){.hero-grid{gap:20px}.hero-art{min-height:400px}.hero-photo{height:330px}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.product-image{height:260px}.story{padding:35px;gap:25px}.nav-links{gap:16px}}
-@media(max-width:650px){.container{width:min(100% - 28px,var(--max))}.announcement{font-size:10px}.nav{min-height:70px}.brand{font-size:21px}.brand-mark{width:36px;height:36px}.menu-toggle{display:block}.nav-cta{display:none}.nav-links{display:none;position:absolute;top:69px;left:0;right:0;padding:20px;background:var(--cream);box-shadow:0 15px 20px #453b3b10;flex-direction:column;align-items:stretch;gap:0}.nav-links.open{display:flex}.nav-links a{padding:12px 5px;border-bottom:1px solid #eee2d9}.hero{padding:40px 0 45px}.hero-grid{grid-template-columns:1fr;gap:12px}.hero h1{font-size:53px;margin:19px 0}.hero-copy{font-size:14px}.hero-art{min-height:350px;margin:0 4px}.hero-photo{height:300px;width:72%}.float-card.one{left:0;top:15%}.float-card.two{right:0;bottom:13%}.float-card{padding:10px 12px;font-size:10px}.float-card span{font-size:20px}section{padding:58px 0}.section-head{align-items:start;flex-direction:column;margin-bottom:24px}.section-head h2{font-size:37px}.categories{grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:28px}.category{padding:15px 10px}.catalog-tools{align-items:start;flex-direction:column}.search-wrap{width:100%}.product-grid{gap:12px}.product-card{padding:7px 7px 12px;border-radius:19px}.product-image{height:180px;border-radius:14px}.product-info{padding:12px 3px 0}.product-info h3{font-size:16px}.product-desc{font-size:10px}.product-bottom{align-items:start;flex-direction:column}.product-order{grid-template-columns:1fr}.mini-button{padding:10px 4px}.story{grid-template-columns:1fr;padding:23px;border-radius:27px}.story-art{min-height:250px}.story-art img{height:250px}.story-copy h2{font-size:35px}.custom-banner{align-items:start;flex-direction:column;padding:30px 24px}.footer-top{grid-template-columns:1fr 1fr;gap:28px}.footer-top>div:first-child{grid-column:1/-1}.footer-bottom{flex-direction:column;gap:5px}}
+@media(max-width:650px){.container{width:min(100% - 28px,var(--max))}.announcement{font-size:10px}.nav{min-height:70px}.brand{font-size:21px}.brand-mark{display:block;width:72px;height:54px;object-fit:contain;flex:0 0 auto;background:#FFFCFF;border-radius:14px;padding:3px;box-sizing:border-box;box-shadow:var(--soft-shadow);transform:none}.menu-toggle{display:block}.nav-cta{display:none}.nav-links{display:none;position:absolute;top:69px;left:0;right:0;padding:20px;background:var(--cream);box-shadow:0 15px 20px #39334B10;flex-direction:column;align-items:stretch;gap:0}.nav-links.open{display:flex}.nav-links a{padding:12px 5px;border-bottom:1px solid #eee2d9}.hero{padding:40px 0 45px}.hero-grid{grid-template-columns:1fr;gap:12px}.hero h1{font-size:53px;margin:19px 0}.hero-copy{font-size:14px}.hero-art{min-height:350px;margin:0 4px}.hero-photo{height:300px;width:72%}.float-card.one{left:0;top:15%}.float-card.two{right:0;bottom:13%}.float-card{padding:10px 12px;font-size:10px}.float-card span{font-size:20px}section{padding:58px 0}.section-head{align-items:start;flex-direction:column;margin-bottom:24px}.section-head h2{font-size:37px}.categories{grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:28px}.category{padding:15px 10px}.catalog-tools{align-items:start;flex-direction:column}.search-wrap{width:100%}.product-grid{gap:12px}.product-card{padding:7px 7px 12px;border-radius:19px}.product-image{height:180px;border-radius:14px}.product-info{padding:12px 3px 0}.product-info h3{font-size:16px}.product-desc{font-size:10px}.product-bottom{align-items:start;flex-direction:column}.product-order{grid-template-columns:1fr}.mini-button{padding:10px 4px}.story{grid-template-columns:1fr;padding:23px;border-radius:27px}.story-art{min-height:250px}.story-art img{height:250px}.story-copy h2{font-size:35px}.custom-banner{align-items:start;flex-direction:column;padding:30px 24px}.footer-top{grid-template-columns:1fr 1fr;gap:28px}.footer-top>div:first-child{grid-column:1/-1}.footer-bottom{flex-direction:column;gap:5px}}
 </style>
 </head>
 <body>
 <div class="announcement">A LITTLE LOVE, A LOT OF YARN &nbsp; ✿ &nbsp; HANDMADE WITH HEART</div>
 <header>
   <div class="container nav">
-    <a class="brand" href="#home" aria-label="Crochet Queen home"><span class="brand-mark">🧶</span><span>Crochet Queen</span></a>
+    <a class="brand" href="#home" aria-label="Crochet Queen home"><img class="brand-mark" src="assets/logo.jpeg" alt="Crochet Queen logo"><span>Crochet Queen</span></a>
     <nav class="nav-links" id="navLinks" aria-label="Main navigation">
       <a href="#home">Home</a><a href="#shop">Shop all</a><a href="#story">Our story</a><a href="#custom">Custom orders</a>
     </nav>
@@ -139,6 +166,9 @@ footer{padding:55px 0 25px}
 </header>
 <main>
 <section class="hero" id="home">
+  <video class="hero-background-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true" tabindex="-1">
+    <source src="assets/home-page-background.mp4" type="video/mp4">
+  </video>
   <div class="container hero-grid">
     <div class="reveal">
       <span class="eyebrow">✿ Small stitches, big feelings</span>
@@ -149,7 +179,122 @@ footer{padding:55px 0 25px}
     </div>
     <div class="hero-art reveal">
       <div class="art-halo"></div>
-      <div class="hero-photo"><img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=900&q=85" alt="Artisan handmade craft details" fetchpriority="high"></div>
+      <div class="hero-photo" role="img" aria-label="Animated illustration of two hands crocheting vibrant yarn on a warm wooden craft desk">
+<svg id="crochet-animation" viewBox="0 0 600 760" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+<defs>
+ <linearGradient id="cq-wood" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DCA477"/><stop offset=".45" stop-color="#B8754D"/><stop offset="1" stop-color="#855139"/></linearGradient>
+ <linearGradient id="cq-skin" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F9D1B5"/><stop offset=".55" stop-color="#E6A77F"/><stop offset="1" stop-color="#C77E60"/></linearGradient>
+ <linearGradient id="cq-skin-light" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFE2CC"/><stop offset="1" stop-color="#D9916D"/></linearGradient>
+ <linearGradient id="cq-hook" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFF1CE"/><stop offset=".45" stop-color="#D8B56D"/><stop offset="1" stop-color="#9C6A3C"/></linearGradient>
+ <radialGradient id="cq-light"><stop stop-color="#FFF8DB" stop-opacity=".75"/><stop offset="1" stop-color="#FFF8DB" stop-opacity="0"/></radialGradient>
+ <linearGradient id="cq-purple" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#C9A0ED"/><stop offset="1" stop-color="#7653A7"/></linearGradient>
+ <linearGradient id="cq-pink" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FF9DAD"/><stop offset="1" stop-color="#D94775"/></linearGradient>
+ <linearGradient id="cq-teal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#72E0C7"/><stop offset="1" stop-color="#238D83"/></linearGradient>
+ <filter id="cq-shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="9"/></filter>
+ <pattern id="cq-knit" width="13" height="13" patternUnits="userSpaceOnUse"><path d="M2 2 Q7 0 7 6 T12 11" fill="none" stroke="#FFF0E7" stroke-opacity=".5" stroke-width="2"/></pattern>
+</defs>
+<!-- Wooden desk -->
+<rect width="600" height="760" fill="url(#cq-wood)"/>
+<g opacity=".23" fill="none" stroke="#6B3C2A" stroke-width="3">
+ <path d="M-30 72 Q100 44 240 79 T640 64"/><path d="M-20 154 Q150 125 320 159 T630 146"/>
+ <path d="M-20 263 Q120 235 290 270 T620 252"/><path d="M-30 375 Q160 344 330 378 T630 360"/>
+ <path d="M-20 497 Q140 468 300 500 T630 482"/><path d="M-30 617 Q140 585 330 620 T640 601"/>
+ <path d="M-10 706 Q150 680 310 710 T640 694"/>
+</g>
+<g opacity=".15" fill="none" stroke="#FFE0B5" stroke-width="2"><path d="M-20 86 Q140 66 300 90 T620 81"/><path d="M-20 391 Q140 372 300 395 T620 384"/><path d="M-20 633 Q140 612 300 639 T620 627"/></g>
+<ellipse cx="300" cy="355" rx="290" ry="310" fill="url(#cq-light)" class="scene-glow"/>
+<!-- Neatly arranged yarn stock -->
+<g class="yarn-orbit" transform="translate(91 118)">
+ <ellipse cy="51" rx="63" ry="15" fill="#4C2B22" opacity=".22"/>
+ <g transform="rotate(-13)">
+  <ellipse rx="51" ry="56" fill="#F0C870"/>
+  <ellipse rx="46" ry="51" fill="#F9DB91"/>
+  <path d="M-39 -29 Q-8 -47 22 -30 T38 8 T-4 43 T-37 13 T5 -17 T35 21" fill="none" stroke="#D99B42" stroke-width="5" stroke-linecap="round"/>
+  <path d="M-31 -42 Q1 -20 28 -4 M-40 0 Q-5 15 35 2 M-24 39 Q0 15 31 30" fill="none" stroke="#FFF0C3" stroke-width="4" stroke-linecap="round"/>
+ </g>
+</g>
+<g class="yarn-orbit orbit-two" transform="translate(499 140)">
+ <ellipse cy="47" rx="58" ry="14" fill="#4C2B22" opacity=".24"/>
+ <g transform="rotate(15)">
+  <ellipse rx="48" ry="53" fill="url(#cq-purple)"/>
+  <path d="M-37 -30 Q-5 -49 24 -28 T36 9 T-3 40 T-36 9 T4 -18 T32 20" fill="none" stroke="#E8D2FF" stroke-width="5" stroke-linecap="round"/>
+  <path d="M-28 -41 Q0 -20 28 -5 M-40 1 Q-4 14 36 1 M-22 38 Q0 17 28 29" fill="none" stroke="#7855A4" stroke-width="4" stroke-linecap="round"/>
+ </g>
+</g>
+<g class="yarn-orbit" transform="translate(84 564)">
+ <ellipse cy="38" rx="52" ry="12" fill="#4C2B22" opacity=".23"/>
+ <g transform="rotate(13)">
+  <ellipse rx="43" ry="46" fill="url(#cq-teal)"/>
+  <path d="M-31 -27 Q-4 -41 21 -24 T31 8 T-3 35 T-30 7 T4 -15 T27 17" fill="none" stroke="#B3F6E5" stroke-width="4.5" stroke-linecap="round"/>
+ </g>
+</g>
+<g class="yarn-orbit orbit-two" transform="translate(514 566)">
+ <ellipse cy="35" rx="52" ry="12" fill="#4C2B22" opacity=".24"/>
+ <g transform="rotate(-14)">
+  <ellipse rx="43" ry="46" fill="url(#cq-pink)"/>
+  <path d="M-31 -27 Q-4 -41 21 -24 T31 8 T-3 35 T-30 7 T4 -15 T27 17" fill="none" stroke="#FFD4DF" stroke-width="4.5" stroke-linecap="round"/>
+ </g>
+</g>
+<!-- Loose yarn coils on the desk -->
+<path d="M52 220 C86 196 114 211 119 233 S92 260 77 243 S94 218 110 237 S86 269 61 251" fill="none" stroke="#F0C870" stroke-width="7" stroke-linecap="round"/>
+<path d="M489 325 C520 302 546 316 546 337 S520 356 507 339 S523 317 537 337" fill="none" stroke="#B79AE8" stroke-width="7" stroke-linecap="round"/>
+<!-- Crochet piece, soft pastel flower square -->
+<ellipse cx="304" cy="460" rx="138" ry="108" fill="#573B32" opacity=".22" filter="url(#cq-shadow)"/>
+<g transform="translate(303 447) rotate(-7)">
+ <rect x="-108" y="-94" width="216" height="188" rx="24" fill="#F7E7D8" stroke="#FFF6EB" stroke-width="8"/>
+ <rect x="-91" y="-78" width="182" height="156" rx="18" fill="#D9C3E9"/>
+ <rect x="-91" y="-78" width="182" height="156" rx="18" fill="url(#cq-knit)"/>
+ <g fill="none" stroke-linecap="round" stroke-width="12">
+  <path d="M-2 -54 C-18 -82 -43 -64 -31 -43 C-65 -52 -68 -20 -40 -12 C-65 11 -37 28 -19 9 C-16 39 15 39 14 9 C40 29 61 5 38 -12 C66 -24 48 -52 21 -43 C33 -72 2 -82 -2 -54Z" stroke="#F0C870"/>
+  <path d="M-2 -54 C-18 -82 -43 -64 -31 -43 C-65 -52 -68 -20 -40 -12 C-65 11 -37 28 -19 9 C-16 39 15 39 14 9 C40 29 61 5 38 -12 C66 -24 48 -52 21 -43 C33 -72 2 -82 -2 -54Z" stroke="#FFF0B8" stroke-width="3"/>
+  <path d="M-69 51 Q-45 32 -25 51 T17 51 T61 51" stroke="#E87088" stroke-width="8"/>
+  <path d="M-69 65 Q-45 46 -25 65 T17 65 T61 65" stroke="#F7B8C7" stroke-width="5"/>
+ </g>
+ <circle cx="-2" cy="-20" r="10" fill="#E87088" stroke="#FFE7EC" stroke-width="4"/>
+</g>
+<!-- Loose working yarn, animated dash pattern -->
+<path class="yarn-thread" d="M124 238 C160 264 176 302 215 330 S256 350 270 377 C281 397 268 416 291 428" fill="none" stroke="#F0C870" stroke-width="8" stroke-linecap="round"/>
+<path class="yarn-thread" d="M124 238 C160 264 176 302 215 330 S256 350 270 377 C281 397 268 416 291 428" fill="none" stroke="#FFF0C0" stroke-width="2.5" stroke-linecap="round"/>
+<!-- Left forearm and hand -->
+<g class="left-hand">
+ <path d="M-20 423 C28 400 60 374 102 344 C128 325 153 326 169 343 C181 357 171 373 151 389 L107 424 C90 441 81 466 67 490 L-10 526Z" fill="#9B6047" opacity=".23"/>
+ <path d="M-20 399 C21 382 54 356 93 328 C119 309 145 313 158 330 C169 344 159 360 143 373 L101 405 C84 419 73 445 59 470 L-15 505Z" fill="url(#cq-skin)"/>
+ <path d="M89 330 C105 313 124 304 139 311 C154 318 155 332 143 344 L114 370 C103 380 91 374 87 363Z" fill="url(#cq-skin-light)"/>
+ <path d="M111 351 C133 332 148 333 158 343 C167 354 154 367 140 380 L112 402 C99 411 88 401 94 389Z" fill="url(#cq-skin)"/>
+ <path d="M130 375 C151 359 165 363 169 374 C174 385 160 398 145 410 L120 430 C108 438 98 427 106 416Z" fill="url(#cq-skin-light)"/>
+ <path d="M48 404 C65 387 76 370 88 357 C100 344 113 350 112 363 C110 376 93 396 84 413 L65 446" fill="none" stroke="#F8D1B6" stroke-width="13" stroke-linecap="round"/>
+ <path d="M108 330 Q125 315 139 320 M119 353 Q134 338 148 344 M134 380 Q148 367 160 374" fill="none" stroke="#C77E60" stroke-width="2.5" opacity=".6"/>
+ <path d="M-4 407 Q22 397 43 384" fill="none" stroke="#FFE1CB" stroke-width="4" opacity=".8"/>
+</g>
+<!-- Right forearm and hand -->
+<g class="right-hand">
+ <path d="M620 417 C570 397 537 372 497 343 C473 326 448 327 434 343 C423 357 432 373 450 387 L492 420 C508 436 521 459 535 485 L612 524Z" fill="#6C4237" opacity=".22"/>
+ <path d="M620 395 C581 378 548 353 508 326 C483 309 459 312 446 330 C436 344 445 360 462 373 L503 405 C519 419 530 445 545 470 L615 503Z" fill="url(#cq-skin)"/>
+ <path d="M508 329 C491 312 472 304 458 311 C443 318 442 332 454 345 L482 370 C493 380 505 373 510 362Z" fill="url(#cq-skin-light)"/>
+ <path d="M486 352 C464 333 450 334 440 344 C431 355 444 368 458 381 L486 403 C499 412 510 401 504 389Z" fill="url(#cq-skin)"/>
+ <path d="M467 376 C447 360 433 364 429 375 C425 386 438 399 453 411 L478 431 C490 439 501 428 493 417Z" fill="url(#cq-skin-light)"/>
+ <path d="M550 403 C532 386 521 369 508 357 C496 345 485 352 486 364 C488 377 505 396 514 413 L533 446" fill="none" stroke="#F8D1B6" stroke-width="13" stroke-linecap="round"/>
+ <path d="M491 330 Q475 315 460 321 M480 353 Q465 339 451 345 M465 380 Q451 367 439 375" fill="none" stroke="#C77E60" stroke-width="2.5" opacity=".6"/>
+ <path d="M603 404 Q578 393 557 380" fill="none" stroke="#FFE1CB" stroke-width="4" opacity=".8"/>
+</g>
+<!-- Hook held across the stitch -->
+<g class="hook-motion" transform="translate(303 350) rotate(-28)">
+ <rect x="-123" y="-6" width="246" height="12" rx="6" fill="url(#cq-hook)" stroke="#FFF0C8" stroke-width="1.5"/>
+ <rect x="-68" y="-9" width="74" height="18" rx="9" fill="#C7A0E8" stroke="#F1E4FF" stroke-width="2"/>
+ <path d="M117 -5 Q139 -4 132 13 Q128 23 115 17" fill="none" stroke="url(#cq-hook)" stroke-width="10" stroke-linecap="round"/>
+ <path d="M-110 -2 L-62 -2 M15 -2 L104 -2" stroke="#FFF8DF" stroke-width="2.5" stroke-linecap="round" opacity=".8"/>
+</g>
+<!-- Small finished loops and soft glints -->
+<g fill="none" stroke-linecap="round">
+ <path d="M267 378 C255 364 261 351 275 352 C289 353 290 369 278 378" stroke="#F0C870" stroke-width="6"/>
+ <path d="M279 378 C267 364 273 351 287 352 C301 353 302 369 290 378" stroke="#E87088" stroke-width="6"/>
+</g>
+<g class="sparkle-dot" fill="#FFF5C9"><path d="M197 184 l5 13 13 5 -13 5 -5 13 -5 -13 -13 -5 13 -5Z"/></g>
+<g class="sparkle-dot delay" fill="#FFF5C9"><path d="M410 220 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4Z"/></g>
+<g class="sparkle-dot" fill="#FFF5C9"><circle cx="200" cy="287" r="4"/><circle cx="402" cy="302" r="3"/><circle cx="384" cy="173" r="3"/></g>
+<rect width="600" height="760" fill="none" stroke="#FFF6E9" stroke-opacity=".15" stroke-width="16"/>
+</svg>
+</div>
       <div class="float-card one"><span>🌼</span><div>Made by hand<br><small>with a whole lot of love</small></div></div>
       <div class="float-card two"><span>🧸</span><div>Little keepsakes<br><small>big happy feelings</small></div></div>
       <span class="sparkle s1">✳</span><span class="sparkle s2">✦</span>
@@ -188,9 +333,9 @@ footer{padding:55px 0 25px}
 <footer>
   <div class="container">
     <div class="footer-top">
-      <div><a class="brand" href="#home"><span class="brand-mark">🧶</span><span>Crochet Queen</span></a><p class="footer-blurb">Little things, made with love. Handmade crochet treasures to keep, gift and adore.</p></div>
+      <div><a class="brand" href="#home"><img class="brand-mark" src="assets/logo.jpeg" alt="Crochet Queen logo"><span>Crochet Queen</span></a><p class="footer-blurb">Little things, made with love. Handmade crochet treasures to keep, gift and adore.</p></div>
       <div><div class="footer-heading">Explore</div><div class="footer-links"><a href="#shop">Shop the collection</a><a href="#story">Our story</a><a href="#custom">Custom orders</a></div></div>
-      <div><div class="footer-heading">Say hello</div><div class="footer-links"><a href="#custom" id="footerContact">WhatsApp enquiries</a><a href="#shop">Product questions</a><a href="#home">Back to the top ↑</a></div></div>
+      <div><div class="footer-heading">Say hello</div><div class="footer-links"><a href="https://www.instagram.com/crochet_queen001/" id="footerContact">Instagram enquiries</a><a href="#shop">Product questions</a><a href="#home">Back to the top ↑</a></div></div>
     </div>
     <div class="footer-bottom"><span>© <span id="year"></span> Crochet Queen. Made with ♡ and yarn.</span><span>Small stitches. Big love.</span></div>
   </div>
@@ -201,12 +346,12 @@ footer{padding:55px 0 25px}
   CROCHET QUEEN SETUP
   1. Replace each sample product with your real product details.
   2. Add the exact Amazon product URL in amazonUrl.
-  3. Add your WhatsApp number in international format, digits only, to whatsappNumber.
+  3. Add your Instagram number in international format, digits only, to InstagramNumber.
      India example format: 91 followed by your 10-digit mobile number.
   4. Replace sample photos with your own product photos when available.
 */
 const STORE = {
-  whatsappNumber: "",
+  instagramUrl: "https://www.instagram.com/crochet_queen001/",
   currency: "INR",
   locale: "en-IN"
 };
@@ -298,32 +443,19 @@ grid.addEventListener("click",event => {
     if (product.amazonUrl && /^https:\/\/(www\.)?amazon\./i.test(product.amazonUrl)) {
       window.open(product.amazonUrl,"_blank","noopener,noreferrer");
     } else {
-      showToast("Amazon link not added yet for " + product.name + ". Add its real product URL in the website setup.");
+      showToast("Amazon link not added yet for " + product.name + ". Contact us on Instagram for availability.");
     }
   } else {
-    if (!STORE.whatsappNumber) {
-      showToast("Direct orders need your WhatsApp number. Add it in the STORE settings before launch.");
-      return;
-    }
-    const message = "Hello Crochet Queen! I would like to enquire about " + product.name + " (listed at " + money(product.price) + "). Is it available?";
-    window.open("https://wa.me/" + STORE.whatsappNumber + "?text=" + encodeURIComponent(message),"_blank","noopener,noreferrer");
+    window.open(STORE.instagramUrl,"_blank","noopener,noreferrer");
+    showToast("Instagram opened. Send us a message about " + product.name + ".");
   }
 });
 
 function startCustomOrder() {
-  if (!STORE.whatsappNumber) {
-    showToast("Add your WhatsApp number in the STORE settings to receive custom order enquiries.");
-    return;
-  }
-  window.open("https://wa.me/" + STORE.whatsappNumber + "?text=" + encodeURIComponent("Hello Crochet Queen! I'd love to enquire about a custom crochet order."),"_blank","noopener,noreferrer");
+  window.open(STORE.instagramUrl,"_blank","noopener,noreferrer");
 }
 document.getElementById("customOrder").addEventListener("click",startCustomOrder);
 document.getElementById("footerContact").addEventListener("click",event => {
-  if (!STORE.whatsappNumber) {
-    event.preventDefault();
-    showToast("Add your WhatsApp number in the STORE settings to enable contact.");
-    return;
-  }
   event.preventDefault();
   startCustomOrder();
 });
